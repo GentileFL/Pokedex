@@ -6,14 +6,16 @@
 
 body{
     min-height: 100vh;
-    overflow: hidden;
+    
 
 }
 
 header{
     position:relative;
-    width: 100%;
-    background-color: gold;
+    width: 200px;
+    height: 80px;
+    background-color: lightslategrey;
+    border-bottom: 3px solid white;
 
 }
 
@@ -21,7 +23,7 @@ header{
     position:fixed;
     width: 200px;
     height: 100VH;
-    background-color: lightslategray;
+    background-color: lightslategrey;
     border-left: 10px solid lightslategray;
     transition: 0.5s;
     overflow: hidden;
@@ -31,14 +33,14 @@ header{
 
 .navBar ul{
     position:  absolute;
-    top:80px;
+    top:0px;
     left:0;
     width: 100%;
 }
 
 .navBar ul li{
     position: relative;
-    width: 200%;
+    width: 100%;
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -53,6 +55,7 @@ header{
     display: block;
     width: 100%;
     display: flex;
+    margin:2px;
     text-decoration: none;
     color:white;
 }
@@ -67,6 +70,7 @@ header{
     height: 30px;
     line-height: 70px;
     text-align: center;
+    margin:14px;
 }
 
 
@@ -87,6 +91,86 @@ header{
     white-space: nowrap;
 }
 
+main {
+    position:absolute;
+    width: calc(100% - 200px);
+    left: 200px;
+    min-height: 100vh;
+    
+}
+
+main .details{
+    position:relative;
+    width: 100%;
+    background-color: green;
+       
+}
+
+main .pokeLista{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+  }
+
+.card {
+    list-style: none;
+    padding: 20px;
+    color: #222;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .card:hover {
+    animation: bounce 0.5s linear;
+  }
+  
+  .card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .card-image {
+    height: 180px;
+    position: relative;
+    z-index: 2;
+  }
+
+  @keyframes bounce {
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    80% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 
 
 /*Alterar barra de rolagem*/
@@ -98,7 +182,7 @@ header{
     background: #f4f4f4;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #fe4719;
+    background-color: royalblue;
     border-radius: 15px;
 }
 /*Fim do script*/
