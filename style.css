@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+header{
+    position:relative;
+    width: 100%;
+    background-color: gold;
+
+}
+
+.navBar{
+    position:fixed;
+    width: 200px;
+    height: 100VH;
+    background-color: lightslategray;
+    border-left: 10px solid lightslategray;
+    transition: 0.5s;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+.navBar ul{
+    position:  absolute;
+    top:80px;
+    left:0;
+    width: 100%;
+}
+
+.navBar ul li{
+    position: relative;
+    width: 200%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navBar ul li:hover{
+    background-color: white;
+}
+
+.navBar ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:white;
+}
+.navBar ul li:hover a{
+    color:black;
+}
+
+.navBar ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 30px;
+    height: 30px;
+    line-height: 70px;
+    text-align: center;
+}
+
+
+
+.navBar ul li a img{
+    position: relative;
+    margin:10px;
+}
+
+
+.navBar ul li a .title{
+    position: relative;
+    display:block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+
+/*Alterar barra de rolagem*/
+::-webkit-scrollbar-track{
+    background-color: lightslategray;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fe4719;
+    border-radius: 15px;
+}
+/*Fim do script*/
